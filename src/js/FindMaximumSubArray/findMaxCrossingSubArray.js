@@ -15,11 +15,11 @@ function findMaxCrossingSubArray(array, startIndex, midIndex, endIndex) {
             resultLeftIndex = i;
         }
     }
-    for (var i = midIndex + 1; i <= endIndex; i++) {
-        rightSum += array[i];
+    for (var j = midIndex + 1; j <= endIndex; j++) {
+        rightSum += array[j];
         if (rightSum > rightSubArrayMaxSum) {
             rightSubArrayMaxSum = rightSum;
-            resultRightIndex = i;
+            resultRightIndex = j;
         }
     }
     return {
