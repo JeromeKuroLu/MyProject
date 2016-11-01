@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c19d78c1-652c-4912-a706-888f946b3e05" name="Default" comment="add merge sort and organize the file structure">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nodePackageTest/bluebird.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/FindMaximumSubArray/testFindMaximumSubArray.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/MergeSort/merge.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/MergeSort/mergeSort.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/MergeSort/testMergeSort.js" />
+    <list default="true" id="c19d78c1-652c-4912-a706-888f946b3e05" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/findMaxCrossingSubArray.js" afterPath="$PROJECT_DIR$/src/js/FindMaximumSubArray/findMaxCrossingSubArray.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/findMaximumSubArray.js" afterPath="$PROJECT_DIR$/src/js/FindMaximumSubArray/findMaximumSubArray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/testInsertionSort.js" afterPath="$PROJECT_DIR$/src/test/testInsertionSort.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/js/insertionSort.js" afterPath="$PROJECT_DIR$/src/js/InsertionSort/insertionSort.js" />
     </list>
     <ignored path="MyProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,8 +27,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="insertionSort.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/insertionSort.js">
+      <file leaf-file-name="insertionSort.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/InsertionSort/insertionSort.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
@@ -91,7 +85,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mergeSort.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mergeSort.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/MergeSort/mergeSort.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="468">
@@ -341,29 +335,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MergeSort" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MyProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FindMaximumSubArray" />
+              <option name="myItemId" value="InsertionSort" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -404,6 +376,7 @@
       <recent name="D:\Project\MyProject\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\MyProject\src\js\InsertionSort" />
       <recent name="D:\Project\MyProject\src\js\FindMaximumSubArray" />
       <recent name="D:\Project\MyProject\src\js" />
     </key>
@@ -529,12 +502,20 @@
       <workItem from="1477148602154" duration="1958000" />
       <workItem from="1477560549089" duration="2104000" />
       <workItem from="1477748199520" duration="358000" />
-      <workItem from="1478001750396" duration="4393000" />
+      <workItem from="1478001750396" duration="4533000" />
     </task>
+    <task id="LOCAL-00001" summary="add merge sort and organize the file structure">
+      <created>1478006174780</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1478006174780</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32543000" />
+    <option name="totallyTimeSpent" value="32683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1861" height="1096" extended-state="6" />
@@ -542,8 +523,8 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21361889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32983193" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32983193" sideWeight="0.498078" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.501922" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3592437" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -593,7 +574,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/js/insertionSort.js">
+    <entry file="file://$PROJECT_DIR$/src/js/InsertionSort/insertionSort.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
@@ -667,7 +648,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/insertionSort.js">
+    <entry file="file://$PROJECT_DIR$/src/js/InsertionSort/insertionSort.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
@@ -731,7 +712,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/insertionSort.js">
+    <entry file="file://$PROJECT_DIR$/src/js/InsertionSort/insertionSort.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
@@ -984,14 +965,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/insertionSort.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nodePackageTest/bluebird.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -1059,6 +1032,14 @@
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/InsertionSort/insertionSort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="37" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
