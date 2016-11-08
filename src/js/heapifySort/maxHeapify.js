@@ -3,8 +3,8 @@
  */
 function maxHeapify(arr, i) {
     var root = arr[i],
-        leftChildIndex = 2 * i,
-        rightChildIndex = 2 * i + 1,
+        leftChildIndex = 2 * i + 1,
+        rightChildIndex = 2 * i + 2,
         leftChild = arr[leftChildIndex],
         rightChild = arr[rightChildIndex],
         largestEleIndex = i;
