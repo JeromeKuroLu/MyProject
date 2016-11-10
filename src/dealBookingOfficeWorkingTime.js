@@ -211,4 +211,4 @@ generateWorkingTime('AAH', '2016-12-31');
 
 module.exports = {
     generateWorkingTime: generateWorkingTime
-}
+};
