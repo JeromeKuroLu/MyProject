@@ -12,13 +12,14 @@ var priorityQueue = require('./priorityQueue');
     }, {name: 'jjj', key: 1}, {name: 'kkk', key: 14}, {name: 'lll', key: 6}];
 
     var queue = [],
-        status = 0;
+        status = 1;
     for (var i = 0; i < 12; i++) {
         priorityQueue.insert(queue, items[i], status);
     }
     console.log(queue);
     console.log(priorityQueue.getExtreme(queue));
-    priorityQueue.increaseKey(queue, items[9], 100, status);
+    // priorityQueue.increaseKey(queue, items[9], 100, status);
+    priorityQueue.decreaseKey(queue, items[4], 2, status);
     console.log(queue);
     priorityQueue.extractExtreme(queue, status);
     console.log(priorityQueue.getExtreme(queue));

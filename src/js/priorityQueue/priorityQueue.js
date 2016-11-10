@@ -62,7 +62,38 @@ function increaseKey(s, el, k, status) {
             console.log('the queue cannot find the Object');
         }
     }
+}
 
+function decreaseKey(s, el, k, status) {
+    if (!el.key) {
+        console.error('must input a Object contains "key" value. .....');
+    }
+    else if (el.key <= k) {
+        console.log('increased "key" value is more than original value');
+    }
+    else {
+        var elIndex = false;
+        for (var i = 0, len = s.length; i < len; i++) {
+            var currNode = s[i];
+            if (currNode === el) {
+                elIndex = i;
+                break;
+            }
+        }
+        if (typeof elIndex === 'number') {
+            s[elIndex].key = k;
+
+            if (!status && elIndex > 0) {
+                compareWithParent(s, elIndex, status);
+            }
+            else if (status) {
+                heapify(s, elIndex, status);
+            }
+        }
+        else {
+            console.log('the queue cannot find the Object');
+        }
+    }
 }
 // status: 0 = minimum, 1 = maximum
 function buildHeap(s, status) {
@@ -118,5 +149,6 @@ module.exports = {
     insert: insert,
     getExtreme: getExtreme,
     extractExtreme: extractExtreme,
-    increaseKey: increaseKey
+    increaseKey: increaseKey,
+    decreaseKey: decreaseKey
 };
