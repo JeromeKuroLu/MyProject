@@ -7,16 +7,15 @@ var _ = require('lodash'),
 
 function generateWorkingTime (officeCode, startTimeStr, endTimeStr) {
     var noWorkingDayBuffer = xlsx.parse('../static/no_working_day.xlsx')[0].data,
-        workingHourBuffer = xlsx.parse('../static/working_hour.xlsx')[0].data;
-
-    var reconstructTimeParam = constructParamTime(startTimeStr,endTimeStr),
+        workingHourBuffer = xlsx.parse('../static/working_hour.xlsx')[0].data,
+        reconstructTimeParam = constructTimeParam(startTimeStr, endTimeStr),
         realStartTimeStr = reconstructTimeParam.realStartTimeStr,
         realEndTimeStr = reconstructTimeParam.realEndTimeStr,
-        startMoment = moment(realStartTimeStr).subtract(1, 'days'),
-        endMoment = moment(realEndTimeStr).subtract(1, 'days'),
+        startMoment = moment(realStartTimeStr),
+        endMoment = moment(realEndTimeStr),
         startYear = startMoment.year(),
         endYear = endMoment.year(),
-        realWorkingHour = 0;
+        realWorkingMinutes = 0;
 
     var noWorkingDayColumnIndexMap = generateColumnIndexMap(noWorkingDayBuffer[0]);
     var workingHourColumnIndexMap = generateColumnIndexMap(workingHourBuffer[0]);
@@ -27,34 +26,35 @@ function generateWorkingTime (officeCode, startTimeStr, endTimeStr) {
 
     if (startYear == endYear) {
         realNoWorkingDays = filterNoWorkingDays(officeCode, startMoment, endMoment, noWorkingDayOfficeCodeMap, noWorkingDayBuffer, noWorkingDayColumnIndexMap);
-        realWorkingHour = calculateWorkingHourByYear(officeCode, startMoment, endMoment, realNoWorkingDays, workingHourBuffer, workingHourOfficeCodeMap, workingHourColumnIndexMap);
+        realWorkingMinutes = calculateWorkingHourByYear(officeCode, startMoment, endMoment, realNoWorkingDays, workingHourBuffer, workingHourOfficeCodeMap, workingHourColumnIndexMap);
     }
     else if (startYear < endYear) {
         var currentYear = startYear,
             currentYearStartMoment,
             currentYearEndMoment;
-        while (currentYear < endYear) {
+        while (currentYear <= endYear) {
             if (currentYear == startYear) {
                 currentYearStartMoment = startMoment;
             }
             else {
-                currentYearStartMoment = moment(currentYear + '-01-01').subtract(1, 'days');
+                currentYearStartMoment = moment(currentYear + '-01-01');
             }
             if (currentYear == endYear) {
                 currentYearEndMoment = endMoment;
             }
             else {
-                currentYearEndMoment = moment(currentYear + '-12-31').subtract(1, 'days');
+                currentYearEndMoment = moment(currentYear + '-12-31');
             }
             realNoWorkingDays = filterNoWorkingDays(officeCode, currentYearStartMoment, currentYearEndMoment, noWorkingDayOfficeCodeMap, noWorkingDayBuffer, noWorkingDayColumnIndexMap);
-            realWorkingHour += calculateWorkingHourByYear(officeCode, currentYearStartMoment, currentYearEndMoment, realNoWorkingDays, workingHourBuffer, workingHourOfficeCodeMap, workingHourColumnIndexMap);
+            realWorkingMinutes += calculateWorkingHourByYear(officeCode, currentYearStartMoment, currentYearEndMoment, realNoWorkingDays, workingHourBuffer, workingHourOfficeCodeMap, workingHourColumnIndexMap);
             currentYear++;
         }
     }
 
     console.log('Office: ' +  officeCode + ', from: ' + realStartTimeStr + ' to: ' + realEndTimeStr);
-    console.log('working time is: ' + realWorkingHour + ' minutes');
-    console.log('amount to: ' + realWorkingHour/60 + ' hours');
+    console.log('working time is: ' + realWorkingMinutes + ' minutes');
+    console.log('amount to: ' + realWorkingMinutes / 60 + ' hours');
+    return realWorkingMinutes;
 }
 
 function calculateWorkingHourByYear (officeCode, startMoment, endMoment, realNoWorkingDays, workingHourBuffer, workingHourOfficeCodeMap, workingHourColumnIndexMap) {
@@ -112,19 +112,20 @@ function calculateWorkingHourByYear (officeCode, startMoment, endMoment, realNoW
 function filterNoWorkingDays (officeCode, startMoment, endMoment, noWorkingDayOfficeCodeMap, noWorkingDayBuffer, columnIndexMap) {
     var matchedNoWorkingDays = [],
         mapObject = noWorkingDayOfficeCodeMap[officeCode],
-        startMomentExpand = startMoment.subtract(1, 'days'),
-        endMomentExpand = endMoment.add(1, 'days');
+        startMomentExpand = moment(startMoment.format('YYYY-MM-DD')).subtract(1, 'days'),
+        endMomentExpand = moment(endMoment.format('YYYY-MM-DD')).add(1, 'days');
     for (var i = mapObject.startIndex; i <= mapObject.endIndex; i++) {
         var noWorkingRecord = noWorkingDayBuffer[i],
             recordMonthNumber = noWorkingRecord[columnIndexMap.MONTH_NUMBER],
-            recordDateNumber = noWorkingRecord[columnIndexMap.DAYS_OF_MONTH]
-            recordEffectiveStartTime = noWorkingRecord[columnIndexMap.EFFECTIVE_START_IODT];
-        if (recordEffectiveStartTime == 0) {
-            var basicYear = startMoment.year(),
-                limitYear = endMoment.year();
+            recordDateNumber = noWorkingRecord[columnIndexMap.DAYS_OF_MONTH],
+            recordEffectiveStartTime = noWorkingRecord[columnIndexMap.EFFECTIVE_START_IODT],
+            recordEffectiveEndTime = noWorkingRecord[columnIndexMap.EFFECTIVE_END_IODT];
+        if (recordEffectiveStartTime == 0 || recordEffectiveEndTime == 0) {
+            var basicYear = (recordEffectiveStartTime != 0 && startMoment.year() < _.slice(recordEffectiveStartTime.toString(), 0, 4).join('')) ? _.slice(recordEffectiveStartTime.toString(), 0, 4).join('') : startMoment.year(),
+                limitYear = (recordEffectiveEndTime != 0 && endMoment.year() > _.slice(recordEffectiveStartTime.toString(), 0, 4).join('')) ? _.slice(recordEffectiveEndTime.toString(), 0, 4).join('') : endMoment.year();
             while (basicYear <= limitYear) {
-                var newMoment = moment('1984-01-01');
-                newMoment = newMoment.year(basicYear).month(recordMonthNumber).date(recordDateNumber);
+                var newMoment = moment('1084-01-01');
+                newMoment = parseEffectiveTimeToMoment(basicYear.toString(), recordMonthNumber, recordDateNumber);
                 if (newMoment.isBetween(startMomentExpand, endMomentExpand)) {
                     matchedNoWorkingDays.push(newMoment);
                 }
@@ -138,14 +139,14 @@ function filterNoWorkingDays (officeCode, startMoment, endMoment, noWorkingDayOf
             }
         }
     }
-    return matchedNoWorkingDays;
+    return _.uniqWith(matchedNoWorkingDays, _.isEqual);
 }
 
 function parseEffectiveTimeToMoment (timeStr, monthNumber, dateNumber) {
     var timeM = null,
         timeObj = {
             year: _.slice(timeStr, 0, 4).join(''),
-            month: monthNumber,
+            month: monthNumber - 1,
             day: dateNumber
         };
     if (timeObj.year) {
@@ -184,7 +185,7 @@ function generateColumnIndexMap (columnNameArray) {
     return columnIndexMap;
 }
 
-function constructParamTime (startTimeStr, endTimeStr) {
+function constructTimeParam(startTimeStr, endTimeStr) {
     var temp = endTimeStr ? endTimeStr : moment().format('YYYY-MM-DD');
     if (moment(startTimeStr).isSameOrBefore(moment(temp))) {
         endTimeStr = temp;
@@ -199,19 +200,15 @@ function constructParamTime (startTimeStr, endTimeStr) {
     }
 }
 
-generateWorkingTime('AAH', '2014-04-01', '2016-12-20');
+generateWorkingTime('AAH', '2014-12-21', '2014-12-31'); // 32h
+generateWorkingTime('AAH', '2014-12-21', '2015-01-11'); // 80h
+generateWorkingTime('AAH', '2016-09-01');// x
+generateWorkingTime('AAH', '2016-09-06');// less 24h than x
+generateWorkingTime('AAH', '2014-04-01', '2014-12-31');
+generateWorkingTime('AAH', '2014-04-01', '2016-12-31');// sum of below two times add 8h, because 'today time' is calculated twice
 generateWorkingTime('AAH', '2014-04-01');
-generateWorkingTime('AAH', '2016-12-20');
-// generateWorkingTime('AAH', '2014-04-01', '2014-12-31');
-//var x = moment('2010-04-01').isBetween('2010-04-01', '2010-04-02'); //false
-//var x = moment('2010-04-01').isBetween('2010-03-10', '2010-04-01'); //false
-//console.log(moment('2010-04-01').subtract(1, 'days').toString());
-//var x = moment('201501');
-//console.log(x.toString());
-//console.log(_.slice('201601000000', 0, 4).join(''));
-//console.log('00' == 0);
-// var x = moment('2016-01-03');
-// console.log(x.day(-7).toString());
+generateWorkingTime('AAH', '2016-12-31');
+
 module.exports = {
     generateWorkingTime: generateWorkingTime
 }
