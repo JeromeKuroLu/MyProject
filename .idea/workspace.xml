@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c19d78c1-652c-4912-a706-888f946b3e05" name="Default" comment="Add bucket issue">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/issue/bucketComparison.js" />
+    <list default="true" id="c19d78c1-652c-4912-a706-888f946b3e05" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dealBookingOfficeWorkingTime.js" afterPath="$PROJECT_DIR$/src/issue/dealBookingOfficeWorkingTime.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/issue/bucketComparison.js" afterPath="$PROJECT_DIR$/src/issue/bucketComparison.js" />
     </list>
     <ignored path="MyProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +29,8 @@
       <file leaf-file-name="testMaxHeap.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/HeapifySort/testMaxHeap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+            <state relative-caret-position="138">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -42,8 +41,8 @@
       <file leaf-file-name="testFindMaximumSubArray.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/FindMaximumSubArray/testFindMaximumSubArray.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+            <state relative-caret-position="69">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="14" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -54,8 +53,8 @@
       <file leaf-file-name="quickSort.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/QuickSort/quickSort.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="48" />
+            <state relative-caret-position="115">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -66,8 +65,8 @@
       <file leaf-file-name="dealBookingOfficeWorkingTime.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/issue/dealBookingOfficeWorkingTime.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+            <state relative-caret-position="138">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -76,8 +75,8 @@
       <file leaf-file-name="bucketComparison.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/issue/bucketComparison.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+            <state relative-caret-position="371">
+              <caret line="112" column="47" selection-start-line="112" selection-start-column="47" selection-end-line="112" selection-end-column="47" />
               <folding>
                 <element signature="n#!!doc;n#bucketComparison#0" expanded="false" />
               </folding>
@@ -88,8 +87,8 @@
       <file leaf-file-name="EcmaScript.js" pinned="false" current-in-tab="false">
         <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="161">
+              <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -98,8 +97,8 @@
       <file leaf-file-name="partition.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/QuickSort/partition.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="23" selection-end-column="36" />
+            <state relative-caret-position="46">
+              <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
               <folding>
                 <element signature="n#!!doc;n#partition#0" expanded="false" />
               </folding>
@@ -110,8 +109,8 @@
       <file leaf-file-name="testQuickSort.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/QuickSort/testQuickSort.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="161">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -122,7 +121,7 @@
       <file leaf-file-name="testInsertionSort.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/InsertionSort/testInsertionSort.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="161">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
@@ -132,8 +131,8 @@
       <file leaf-file-name="testPriorityQueue.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/PriorityQueue/testPriorityQueue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+            <state relative-caret-position="437">
+              <caret line="21" column="14" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="14" />
               <folding>
                 <element signature="e#0#42#0" expanded="false" />
               </folding>
@@ -184,9 +183,9 @@
         <option value="$PROJECT_DIR$/src/js/HeapifySort/testMaxHeap.js" />
         <option value="$PROJECT_DIR$/src/js/FindMaximumSubArray/testFindMaximumSubArray.js" />
         <option value="$PROJECT_DIR$/src/js/QuickSort/testQuickSort.js" />
-        <option value="$PROJECT_DIR$/src/js/QuickSort/quickSort.js" />
         <option value="$PROJECT_DIR$/src/js/QuickSort/partition.js" />
         <option value="$PROJECT_DIR$/src/issue/dealBookingOfficeWorkingTime.js" />
+        <option value="$PROJECT_DIR$/src/js/QuickSort/quickSort.js" />
         <option value="$PROJECT_DIR$/src/issue/bucketComparison.js" />
       </list>
     </option>
@@ -200,7 +199,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1874" />
+    <option name="width" value="1861" />
     <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -468,9 +467,9 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Node.js.bucketComparison.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.dealBookingOfficeWorkingTime.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.testQuickSort.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.quickSort.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.testQuickSort.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.quickSort.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.dealBookingOfficeWorkingTime.js" />
         <item index="4" class="java.lang.String" itemvalue="Node.js.testMergeSort.js" />
       </list>
     </recent_temporary>
@@ -514,13 +513,7 @@
       <workItem from="1478269074001" duration="627000" />
       <workItem from="1478522088960" duration="5787000" />
       <workItem from="1478604306338" duration="8734000" />
-      <workItem from="1478677274453" duration="3216000" />
-      <workItem from="1478739083377" duration="2051000" />
-      <workItem from="1478741143823" duration="385000" />
-      <workItem from="1478741553904" duration="4562000" />
-      <workItem from="1478767597114" duration="3455000" />
-      <workItem from="1478827698170" duration="650000" />
-      <workItem from="1478846616633" duration="11062000" />
+      <workItem from="1478861283358" duration="2037000" />
     </task>
     <task id="LOCAL-00001" summary="add merge sort and organize the file structure">
       <created>1478006174780</created>
@@ -543,61 +536,26 @@
       <option name="project" value="LOCAL" />
       <updated>1478527857643</updated>
     </task>
-    <task id="LOCAL-00004" summary="Delete unused file">
-      <created>1478739217833</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1478739217833</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Add decrease priority function and test">
-      <created>1478740330067</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1478740330067</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Adjust the file structure and fix working time logic">
-      <created>1478743496900</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1478743496900</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Fix unterminated statement">
-      <created>1478743600135</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1478743600135</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Add quick sort">
-      <created>1478827512950</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1478827512950</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74468000" />
+    <option name="totallyTimeSpent" value="51048000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1861" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2147541" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21361889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32893288" sideWeight="0.498078" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32878152" sideWeight="0.498078" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28932893" sideWeight="0.5032787" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35863587" sideWeight="0.4967213" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3592437" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33113313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33088234" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -622,13 +580,7 @@
     <MESSAGE value="add merge sort and organize the file structure" />
     <MESSAGE value="reconstruct file structure" />
     <MESSAGE value="Add max heapify sort" />
-    <MESSAGE value="Delete unused file" />
-    <MESSAGE value="Add decrease priority function and test" />
-    <MESSAGE value="Adjust the file structure and fix working time logic" />
-    <MESSAGE value="Fix unterminated statement" />
-    <MESSAGE value="Add quick sort" />
-    <MESSAGE value="Add bucket issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add bucket issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add max heapify sort" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -636,28 +588,22 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/issue/bucketComparison.js</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/issue/bucketComparison.js</url>
-          <line>58</line>
-          <properties />
+          <line>55</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/issue/bucketComparison.js</url>
-          <line>94</line>
-          <properties />
+          <line>91</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="30" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/dbConfig.js" />
+    <entry file="file://$PROJECT_DIR$/src/exportXLSX.js" />
     <entry file="file://$PROJECT_DIR$/src/issue/dealBookingOfficeWorkingTime.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4508">
@@ -672,31 +618,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/InsertionSort/testInsertionSort.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/testInsertionSort.js" />
     <entry file="file://$PROJECT_DIR$/src/dbConfig.js" />
     <entry file="file://$PROJECT_DIR$/src/exportXLSX.js" />
-    <entry file="file://$PROJECT_DIR$/src/issue/dealBookingOfficeWorkingTime.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4508">
-          <caret line="196" column="39" selection-start-line="196" selection-start-column="39" selection-end-line="196" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dbConfig.js" />
-    <entry file="file://$PROJECT_DIR$/src/exportXLSX.js" />
-    <entry file="file://$PROJECT_DIR$/src/issue/dealBookingOfficeWorkingTime.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4508">
-          <caret line="196" column="39" selection-start-line="196" selection-start-column="39" selection-end-line="196" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dealBookingOfficeWorkingTime.js" />
     <entry file="file://$PROJECT_DIR$/src/dbConfig.js" />
     <entry file="file://$PROJECT_DIR$/src/exportXLSX.js" />
     <entry file="file://$PROJECT_DIR$/src/issue/dealBookingOfficeWorkingTime.js">
@@ -829,7 +754,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/InsertionSort/testInsertionSort.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="161">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
@@ -837,8 +762,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/HeapifySort/testMaxHeap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        <state relative-caret-position="138">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
@@ -847,42 +772,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/MergeSort/testMergeSort.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="51" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        <state relative-caret-position="0">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/PriorityQueue/priorityQueue.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
+        <state relative-caret-position="0">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <element signature="n#!!doc;n#insert#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/FindMaximumSubArray/testFindMaximumSubArray.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/QuickSort/testQuickSort.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/QuickSort/quickSort.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="12" selection-end-column="48" />
+        <state relative-caret-position="69">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="14" />
           <folding>
             <element signature="e#0#42#0" expanded="false" />
           </folding>
@@ -891,34 +800,64 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="161">
+          <caret line="7" column="2" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/issue/dealBookingOfficeWorkingTime.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/PriorityQueue/testPriorityQueue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/QuickSort/partition.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="23" selection-end-column="36" />
+        <state relative-caret-position="46">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
           <folding>
             <element signature="n#!!doc;n#partition#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/issue/dealBookingOfficeWorkingTime.js">
+    <entry file="file://$PROJECT_DIR$/src/js/QuickSort/testQuickSort.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="38" column="18" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="161">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/QuickSort/quickSort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/issue/bucketComparison.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        <state relative-caret-position="371">
+          <caret line="112" column="47" selection-start-line="112" selection-start-column="47" selection-end-line="112" selection-end-column="47" />
           <folding>
             <element signature="n#!!doc;n#bucketComparison#0" expanded="false" />
           </folding>

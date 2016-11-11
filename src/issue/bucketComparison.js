@@ -30,10 +30,7 @@ function quickFindAndSort(redBucketArr, startIndex, endIndex, blueBucketArr, sta
     if (endIndex - startIndex > 0) {
         var pivotIndex = parseInt((Math.random() * (endIndex - startIndex + 1) + startIndex), 10),
             t = partition(redBucketArr, startIndex, endIndex, pivotIndex, blueBucketArr, status);
-        if (endIndex - startIndex == 9) {
-            console.log("first pivot: " + pivotIndex);
-        }
-        if (t) {
+        if (typeof t == 'number') {
             quickFindAndSort(redBucketArr, startIndex, t - 1, blueBucketArr, status);
             quickFindAndSort(redBucketArr, t + 1, endIndex, blueBucketArr, status);
         }
