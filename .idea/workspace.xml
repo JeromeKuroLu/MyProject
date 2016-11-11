@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c19d78c1-652c-4912-a706-888f946b3e05" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/issue/bucketComparison.js" afterPath="$PROJECT_DIR$/src/issue/bucketComparison.js" />
     </list>
     <ignored path="MyProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -513,7 +512,7 @@
       <workItem from="1478269074001" duration="627000" />
       <workItem from="1478522088960" duration="5787000" />
       <workItem from="1478604306338" duration="8734000" />
-      <workItem from="1478861283358" duration="2037000" />
+      <workItem from="1478861283358" duration="2194000" />
     </task>
     <task id="LOCAL-00001" summary="add merge sort and organize the file structure">
       <created>1478006174780</created>
@@ -536,15 +535,22 @@
       <option name="project" value="LOCAL" />
       <updated>1478527857643</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix defect that if pivot index getting random value equals first or last value, it makes the array sorted incorrectly">
+      <created>1478864521644</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1478864521644</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51048000" />
+    <option name="totallyTimeSpent" value="51205000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1861" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21361889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -580,7 +586,8 @@
     <MESSAGE value="add merge sort and organize the file structure" />
     <MESSAGE value="reconstruct file structure" />
     <MESSAGE value="Add max heapify sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add max heapify sort" />
+    <MESSAGE value="fix defect that if pivot index getting random value equals first or last value, it makes the array sorted incorrectly" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix defect that if pivot index getting random value equals first or last value, it makes the array sorted incorrectly" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
