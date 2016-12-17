@@ -6,8 +6,8 @@ var _ = require('lodash'),
     xlsx = require('node-xlsx');
 
 function generateWorkingTime (officeCode, startTimeStr, endTimeStr) {
-    var noWorkingDayBuffer = xlsx.parse('../static/no_working_day.xlsx')[0].data,
-        workingHourBuffer = xlsx.parse('../static/working_hour.xlsx')[0].data,
+    var noWorkingDayBuffer = xlsx.parse('../../static/no_working_day.xlsx')[0].data,
+        workingHourBuffer = xlsx.parse('../../static/working_hour.xlsx')[0].data,
         reconstructTimeParam = constructTimeParam(startTimeStr, endTimeStr),
         realStartTimeStr = reconstructTimeParam.realStartTimeStr,
         realEndTimeStr = reconstructTimeParam.realEndTimeStr,
