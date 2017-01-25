@@ -20,9 +20,14 @@ function findPrimeNumber(rangeNum) {
         }
     }
     console.log(primeArray.join(','));
+    var sum = 0;
+    for (var t = 0; t < primeArray.length; t++) {
+        sum += primeArray[t];
+    }
+    console.log('The sum is ' + sum);
     return primeArray;
 }
 
 (function () {
-    findPrimeNumber(231879);
+    findPrimeNumber(2000000);
 }());
