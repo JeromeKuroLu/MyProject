@@ -7,22 +7,6 @@ var findPrimeNumber = require('../findPrimeNumber').findPrimeNumber;
 function getSmallestMultiple(rangeNum) {
     var primeArray = findPrimeNumber(rangeNum),
         result = 1;
-    // for (var m = 2; m <= rangeNum; m++) {
-    //     if (primeArray.indexOf(m) < 0) {
-    //         var isIncluded = false;
-    //         for (var n = 0; n < primeArray.length; n++) {
-    //             var num = primeArray[n];
-    //             if (m % num == 0) {
-    //                 isIncluded = true;
-    //                 primeArray.splice(n, 1, m);
-    //                 break;
-    //             }
-    //         }
-    //         if (!isIncluded) {
-    //             primeArray.push(m);
-    //         }
-    //     }
-    // }
     for (var m = 0; m < primeArray.length; m++) {
         var primeNum = primeArray[m],
             n = 1,
