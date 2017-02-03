@@ -1,6 +1,4 @@
-/**
- * Created by LUJE4 on 1/24/2017.
- */
+
 function findPrimeNumber(rangeNum) {
     var primeArray = [];
 
@@ -28,6 +26,10 @@ function findPrimeNumber(rangeNum) {
     return primeArray;
 }
 
-(function () {
-    findPrimeNumber(2000000);
-}());
+// (function () {
+//     findPrimeNumber(2000000);
+// }());
+
+module.exports = {
+    findPrimeNumber: findPrimeNumber
+};
