@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c19d78c1-652c-4912-a706-888f946b3e05" name="Default" comment="calculate the square sum difference and 10001st prime issues">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/issue/projecteuler.net/10001stPrime.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/issue/projecteuler.net/largestProductInASeries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/issue/projecteuler.net/sumSquareDifference.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/issue/projecteuler.net/specialPythagoreanTriplet.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyProject.iws" />
@@ -31,31 +29,19 @@
       <file leaf-file-name="findPrimeNumber.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/issue/findPrimeNumber.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
+            <state relative-caret-position="46">
               <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="25" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="10001stPrime.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="10001stPrime.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/10001stPrime.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="257">
               <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="largestProductInASeries.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/largestProductInASeries.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -63,7 +49,7 @@
       <file leaf-file-name="multiplesOf3And5.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/multiplesOf3And5.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
+            <state relative-caret-position="23">
               <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
               <folding />
             </state>
@@ -73,7 +59,7 @@
       <file leaf-file-name="largestPrimeFactor.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/largestPrimeFactor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
+            <state relative-caret-position="46">
               <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
               <folding />
             </state>
@@ -103,7 +89,7 @@
       <file leaf-file-name="smallestMultiple.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/smallestMultiple.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
+            <state relative-caret-position="644">
               <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="5" />
               <folding />
             </state>
@@ -113,13 +99,19 @@
       <file leaf-file-name="sumSquareDifference.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/sumSquareDifference.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="5" />
-              <folding>
-                <marker date="1486712637833" expanded="true" signature="495:1046" ph="{...}" />
-                <marker date="1486712637833" expanded="true" signature="589:1044" ph="{...}" />
-                <marker date="1486712637833" expanded="true" signature="695:930" ph="{...}" />
-              </folding>
+            <state relative-caret-position="644">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="specialPythagoreanTriplet.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/specialPythagoreanTriplet.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-253">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -127,7 +119,7 @@
       <file leaf-file-name="quickSort.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/QuickSort/quickSort.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
+            <state relative-caret-position="69">
               <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
               <folding />
             </state>
@@ -196,6 +188,7 @@
         <option value="$PROJECT_DIR$/src/issue/projecteuler.net/sumSquareDifference.js" />
         <option value="$PROJECT_DIR$/src/issue/projecteuler.net/largestProductInASeries.js" />
         <option value="$PROJECT_DIR$/src/issue/projecteuler.net/10001stPrime.js" />
+        <option value="$PROJECT_DIR$/src/issue/projecteuler.net/specialPythagoreanTriplet.js" />
       </list>
     </option>
   </component>
@@ -208,7 +201,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1874" />
+    <option name="width" value="1861" />
     <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -266,8 +259,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -390,10 +383,7 @@
       <recent name="D:\Project\MyProject\src\js" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.10001stPrime.js">
-    <configuration default="false" name="largestPalindromeProduct.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="largestPalindromeProduct.js" working-dir="$PROJECT_DIR$/src/issue/projecteuler.net">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Node.js.specialPythagoreanTriplet.js">
     <configuration default="false" name="smallestMultiple.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="smallestMultiple.js" working-dir="$PROJECT_DIR$/src/issue/projecteuler.net">
       <method />
     </configuration>
@@ -404,6 +394,9 @@
       <method />
     </configuration>
     <configuration default="false" name="10001stPrime.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="10001stPrime.js" working-dir="$PROJECT_DIR$/src/issue/projecteuler.net">
+      <method />
+    </configuration>
+    <configuration default="false" name="specialPythagoreanTriplet.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="specialPythagoreanTriplet.js" working-dir="$PROJECT_DIR$/src/issue/projecteuler.net">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -466,19 +459,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.largestPalindromeProduct.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.smallestMultiple.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.evenFibonacciNumbers.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.sumSquareDifference.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.10001stPrime.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.smallestMultiple.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.evenFibonacciNumbers.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.sumSquareDifference.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.10001stPrime.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.specialPythagoreanTriplet.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.10001stPrime.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.sumSquareDifference.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.smallestMultiple.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.evenFibonacciNumbers.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.largestPalindromeProduct.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.specialPythagoreanTriplet.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.10001stPrime.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.sumSquareDifference.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.smallestMultiple.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.evenFibonacciNumbers.js" />
       </list>
     </recent_temporary>
   </component>
@@ -546,6 +539,7 @@
       <workItem from="1486100058589" duration="6608000" />
       <workItem from="1486519270318" duration="1402000" />
       <workItem from="1486711427141" duration="3579000" />
+      <workItem from="1486806205381" duration="2672000" />
     </task>
     <task id="LOCAL-00001" summary="add merge sort and organize the file structure">
       <created>1478006174780</created>
@@ -628,27 +622,27 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123215000" />
+    <option name="totallyTimeSpent" value="125887000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1874" height="1096" extended-state="0" />
+    <frame x="-8" y="-8" width="1861" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21205598" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21197145" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3285568" sideWeight="0.498078" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28932893" sideWeight="0.5032787" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28249744" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28151262" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3776868" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3285568" sideWeight="0.498078" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -702,7 +696,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/issue/projecteuler.net/10001stPrime.js</url>
           <line>16</line>
-          <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
@@ -715,13 +708,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/issue/dealBookingOfficeWorkingTime.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/exportXLSX.js" />
     <entry file="file://$PROJECT_DIR$/src/exportXLSX.js" />
     <entry file="file://$PROJECT_DIR$/src/issue/dealBookingOfficeWorkingTime.js">
@@ -929,6 +915,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/QuickSort/quickSort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/QuickSort/partition.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/issue/findPrimeNumber.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="25" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/largestProductInASeries.js" />
+    <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/smallestMultiple.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/multiplesOf3And5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/largestPrimeFactor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/largestPalindromeProduct.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -945,80 +979,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/multiplesOf3And5.js">
+    <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/10001stPrime.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="3" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/largestPrimeFactor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/QuickSort/quickSort.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/QuickSort/partition.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/smallestMultiple.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/issue/findPrimeNumber.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="25" selection-end-column="22" />
+        <state relative-caret-position="257">
+          <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/sumSquareDifference.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="5" />
-          <folding>
-            <marker date="1486712637833" expanded="true" signature="495:1046" ph="{...}" />
-            <marker date="1486712637833" expanded="true" signature="589:1044" ph="{...}" />
-            <marker date="1486712637833" expanded="true" signature="695:930" ph="{...}" />
-          </folding>
+        <state relative-caret-position="644">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/largestProductInASeries.js">
+    <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/specialPythagoreanTriplet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/10001stPrime.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        <state relative-caret-position="-253">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
