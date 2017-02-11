@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c19d78c1-652c-4912-a706-888f946b3e05" name="Default" comment="calculate the square sum difference and 10001st prime issues">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/issue/projecteuler.net/specialPythagoreanTriplet.js" />
+    <list default="true" id="c19d78c1-652c-4912-a706-888f946b3e05" name="Default" comment="find the special Pythagorean Triplet product">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/issue/projecteuler.net/highlyDivisibleTriangularNumber.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyProject.iws" />
@@ -39,7 +39,7 @@
       <file leaf-file-name="10001stPrime.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/10001stPrime.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
+            <state relative-caret-position="345">
               <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
               <folding />
             </state>
@@ -69,7 +69,7 @@
       <file leaf-file-name="largestPalindromeProduct.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/largestPalindromeProduct.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
+            <state relative-caret-position="46">
               <caret line="2" column="64" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="2" selection-end-column="64" />
               <folding />
             </state>
@@ -79,7 +79,7 @@
       <file leaf-file-name="evenFibonacciNumbers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/evenFibonacciNumbers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
+            <state relative-caret-position="805">
               <caret line="35" column="38" lean-forward="false" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
               <folding />
             </state>
@@ -99,29 +99,32 @@
       <file leaf-file-name="sumSquareDifference.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/sumSquareDifference.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="5" />
+            <state relative-caret-position="468">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="specialPythagoreanTriplet.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="specialPythagoreanTriplet.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/specialPythagoreanTriplet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-253">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="583">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quickSort.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/QuickSort/quickSort.js">
+      <file leaf-file-name="highlyDivisibleTriangularNumber.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/highlyDivisibleTriangularNumber.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-              <folding />
+            <state relative-caret-position="-783">
+              <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+              <folding>
+                <element signature="n#!!doc;n#getTriangularNumbersByDivisorNum#0" expanded="false" />
+                <element signature="n#!!block;n#getTriangularNumbersByDivisorNum#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -185,10 +188,11 @@
         <option value="$PROJECT_DIR$/src/issue/findPrimeNumber.js" />
         <option value="$PROJECT_DIR$/src/issue/projecteuler.net/smallestMultiple.js" />
         <option value="$PROJECT_DIR$/src/js/QuickSort/partition.js" />
-        <option value="$PROJECT_DIR$/src/issue/projecteuler.net/sumSquareDifference.js" />
         <option value="$PROJECT_DIR$/src/issue/projecteuler.net/largestProductInASeries.js" />
         <option value="$PROJECT_DIR$/src/issue/projecteuler.net/10001stPrime.js" />
         <option value="$PROJECT_DIR$/src/issue/projecteuler.net/specialPythagoreanTriplet.js" />
+        <option value="$PROJECT_DIR$/src/issue/projecteuler.net/sumSquareDifference.js" />
+        <option value="$PROJECT_DIR$/src/issue/projecteuler.net/highlyDivisibleTriangularNumber.js" />
       </list>
     </option>
   </component>
@@ -259,7 +263,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -355,6 +358,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -383,11 +387,8 @@
       <recent name="D:\Project\MyProject\src\js" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.specialPythagoreanTriplet.js">
+  <component name="RunManager" selected="Node.js.highlyDivisibleTriangularNumber.js">
     <configuration default="false" name="smallestMultiple.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="smallestMultiple.js" working-dir="$PROJECT_DIR$/src/issue/projecteuler.net">
-      <method />
-    </configuration>
-    <configuration default="false" name="evenFibonacciNumbers.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="evenFibonacciNumbers.js" working-dir="$PROJECT_DIR$/src/issue/projecteuler.net">
       <method />
     </configuration>
     <configuration default="false" name="sumSquareDifference.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="sumSquareDifference.js" working-dir="$PROJECT_DIR$/src/issue/projecteuler.net">
@@ -397,6 +398,9 @@
       <method />
     </configuration>
     <configuration default="false" name="specialPythagoreanTriplet.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="specialPythagoreanTriplet.js" working-dir="$PROJECT_DIR$/src/issue/projecteuler.net">
+      <method />
+    </configuration>
+    <configuration default="false" name="highlyDivisibleTriangularNumber.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="highlyDivisibleTriangularNumber.js" working-dir="$PROJECT_DIR$/src/issue/projecteuler.net">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -460,18 +464,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Node.js.smallestMultiple.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.evenFibonacciNumbers.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.sumSquareDifference.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.10001stPrime.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.specialPythagoreanTriplet.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.sumSquareDifference.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.10001stPrime.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.specialPythagoreanTriplet.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.highlyDivisibleTriangularNumber.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.specialPythagoreanTriplet.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.10001stPrime.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.highlyDivisibleTriangularNumber.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.specialPythagoreanTriplet.js" />
         <item index="2" class="java.lang.String" itemvalue="Node.js.sumSquareDifference.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.smallestMultiple.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.evenFibonacciNumbers.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.10001stPrime.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.smallestMultiple.js" />
       </list>
     </recent_temporary>
   </component>
@@ -539,7 +543,10 @@
       <workItem from="1486100058589" duration="6608000" />
       <workItem from="1486519270318" duration="1402000" />
       <workItem from="1486711427141" duration="3579000" />
-      <workItem from="1486806205381" duration="2672000" />
+      <workItem from="1486806205381" duration="3151000" />
+      <workItem from="1486809384552" duration="415000" />
+      <workItem from="1486809831111" duration="188000" />
+      <workItem from="1486824019147" duration="5137000" />
     </task>
     <task id="LOCAL-00001" summary="add merge sort and organize the file structure">
       <created>1478006174780</created>
@@ -618,11 +625,18 @@
       <option name="project" value="LOCAL" />
       <updated>1486105434797</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="find the special Pythagorean Triplet product">
+      <created>1486808911786</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1486808911786</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125887000" />
+    <option name="totallyTimeSpent" value="132106000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1861" height="1096" extended-state="6" />
@@ -630,16 +644,16 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21197145" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3277311" sideWeight="0.498078" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28932893" sideWeight="0.5032787" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28151262" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28151262" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3776868" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37710086" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3285568" sideWeight="0.498078" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -672,7 +686,8 @@
     <MESSAGE value="add projecteuler.net issues" />
     <MESSAGE value="change on smallest multiple issue" />
     <MESSAGE value="calculate the square sum difference and 10001st prime issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="calculate the square sum difference and 10001st prime issues" />
+    <MESSAGE value="find the special Pythagorean Triplet product" />
+    <option name="LAST_COMMIT_MESSAGE" value="find the special Pythagorean Triplet product" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -698,8 +713,14 @@
           <line>16</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/issue/projecteuler.net/highlyDivisibleTriangularNumber.js</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="45" />
+      <option name="time" value="51" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
@@ -708,7 +729,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/exportXLSX.js" />
     <entry file="file://$PROJECT_DIR$/src/exportXLSX.js" />
     <entry file="file://$PROJECT_DIR$/src/issue/dealBookingOfficeWorkingTime.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -909,9 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1785">
           <caret line="87" column="62" lean-forward="false" selection-start-line="87" selection-start-column="62" selection-end-line="87" selection-end-column="62" />
-          <folding>
-            <element signature="n#!!doc;n#ObjManager#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -965,7 +982,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/largestPalindromeProduct.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
+        <state relative-caret-position="46">
           <caret line="2" column="64" lean-forward="false" selection-start-line="1" selection-start-column="3" selection-end-line="2" selection-end-column="64" />
           <folding />
         </state>
@@ -973,7 +990,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/evenFibonacciNumbers.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
+        <state relative-caret-position="805">
           <caret line="35" column="38" lean-forward="false" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
           <folding />
         </state>
@@ -981,25 +998,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/10001stPrime.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
+        <state relative-caret-position="345">
           <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/sumSquareDifference.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/specialPythagoreanTriplet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-253">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="583">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/sumSquareDifference.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="30" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/issue/projecteuler.net/highlyDivisibleTriangularNumber.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-783">
+          <caret line="15" column="9" lean-forward="false" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc;n#getTriangularNumbersByDivisorNum#0" expanded="false" />
+            <element signature="n#!!block;n#getTriangularNumbersByDivisorNum#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
