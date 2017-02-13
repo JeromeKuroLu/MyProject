@@ -94,5 +94,6 @@ function getDivisors(num) {
 }
 
 (function () {
+    getTriangularNumbersByDivisorNum(4);
     getTriangularNumbersOverDivisorNum(500);
 }());
