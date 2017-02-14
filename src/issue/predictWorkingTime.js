@@ -1,3 +1,4 @@
+
 var _ = require('lodash'),
     tasksArray = [],
     workersArray = [];
@@ -25,25 +26,35 @@ function calculateWorstTime() {
     _.forEach(workersArray, function (worker) {
         totalTime += worker[0];
     });
-    // console.log("total time is: " + totalTime);
+    console.log("total time is: " + totalTime / 60);
     // console.log('The original workers array:');
     // console.log(workersArray);
     buildHeap(workersArray, 0, 0);
     // console.log('The priority queue is:');
     // console.log(workersArray);
-    if (hasTasksLeft()) {
+    while (hasTasksLeft()) {
         var currentWorker = extractExtreme(workersArray, 0),
             sortedTasks = getUseMostTimeTasks(currentWorker);
         takeTask(currentWorker, sortedTasks);
     }
-
+    var totalTime2 = 0,
+        maxTime = 0;
+    _.forEach(workersArray, function (worker) {
+        totalTime2 += worker[0];
+        if (worker[0] > maxTime) {
+            maxTime = worker[0];
+        }
+    });
+    console.log("total time2 is: " + totalTime2 / 60);
+    console.log("The difference is: " + (totalTime2 - totalTime) / 60);
+    console.log("The max time is: " + maxTime / 60);
 }
 
 function getUseMostTimeTasks(worker) {
-    var newWorker = worker,
+    var newWorker = _.clone(worker),
         useMostTimeTasks = [];
     // insert sort
-    console.log(worker);
+    // console.log(worker);
     for (var i = 1; i <= tasksArray.length; i++) {
         var key = newWorker[i],
             comparedOneIndex = i - 1;
@@ -57,18 +68,23 @@ function getUseMostTimeTasks(worker) {
             comparedOneIndex--;
         }
     }
-    console.log(newWorker);
-    console.log(useMostTimeTasks);
+    // console.log(newWorker);
+    // console.log(useMostTimeTasks);
     return useMostTimeTasks;
 }
 
 function takeTask(worker, sortedTasks) {
     for (var i = 0, len = sortedTasks.length; i < len; i++) {
-        var taskNo = sortedTasks[i];
-        if (tasksArray[taskNo] > 0) {
-            tasksArray[taskNo]--;
+        var taskNo = sortedTasks[i],
+            taskIndex = taskNo - 1;
+        if (tasksArray[taskIndex] > 0) {
+            tasksArray[taskIndex]--;
             worker[0] += worker[taskNo];
-
+            insert(workersArray, worker, 0, 0);
+            break;
+        }
+        else if (tasksArray[taskIndex] <= 0 && i == len - 1) {
+            insert(workersArray, worker, 0, 0);
         }
     }
 }
@@ -158,8 +174,8 @@ function extractExtreme(s, status) {
 }
 
 (function () {
-    var taskNumArray = [3205, 1342, 9085, 8723, 1233],
-        workersNum = 10;
+    var taskNumArray = [3205, 1342, 9085, 8723, 1233], //sum 23588, min 393h, max 1965h.
+        workersNum = 400;
     init(taskNumArray, workersNum);
     calculateWorstTime();
 }());
