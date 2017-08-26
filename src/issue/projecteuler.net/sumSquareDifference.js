@@ -12,10 +12,10 @@ function getDifference(rangeNum) {
         console.log("Please input positive number.")
     }
     else {
-        var firstMultiplier = 1,
+        let firstMultiplier = 1,
             difference = 0;
         while (firstMultiplier < rangeNum) {
-            for (var secondMultiplier = firstMultiplier + 1; secondMultiplier <= rangeNum; secondMultiplier++) {
+            for (let secondMultiplier = firstMultiplier + 1; secondMultiplier <= rangeNum; secondMultiplier++) {
                 difference += firstMultiplier * secondMultiplier;
             }
             firstMultiplier++;

@@ -1,14 +1,14 @@
 
 function findPrimeNumber(rangeNum) {
-    var primeArray = [];
+    let primeArray = [];
 
     if (rangeNum > 2) {
         primeArray.push(2);
     }
 
-    for (var i = 3; i <= rangeNum; i++) {
-        for (var j = 0; j < primeArray.length; j++) {
-            var divisor = primeArray[j];
+    for (let i = 3; i <= rangeNum; i++) {
+        for (let j = 0; j < primeArray.length; j++) {
+            let divisor = primeArray[j];
             if (i % divisor == 0) {
                 break;
             }
@@ -18,8 +18,8 @@ function findPrimeNumber(rangeNum) {
         }
     }
     console.log(primeArray.join(','));
-    var sum = 0;
-    for (var t = 0; t < primeArray.length; t++) {
+    let sum = 0;
+    for (let t = 0; t < primeArray.length; t++) {
         sum += primeArray[t];
     }
     console.log('The sum is ' + sum);

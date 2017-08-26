@@ -7,14 +7,14 @@ function getAllFibNum(upperLimit) {
         console.log('There is no such sequence.');
     }
     else {
-        if (upperLimit == 1) {
+        if (upperLimit === 1) {
             return [1];
         }
-        else if (upperLimit == 2) {
+        else if (upperLimit === 2) {
             return [1, 2];
         }
         else {
-            var allFibNumArray = [1, 2],
+            let allFibNumArray = [1, 2],
                 l = allFibNumArray[1],
                 s = allFibNumArray[0],
                 n = s + l;
@@ -30,10 +30,10 @@ function getAllFibNum(upperLimit) {
 }
 
 function calculateSumOfFibSequence(upperLimit) {
-    var sum = 0,
+    let sum = 0,
         allFibNumArray = getAllFibNum(upperLimit);
-    for (var i = 0; i < allFibNumArray.length; i++) {
-        if (allFibNumArray[i] % 2 == 0) {
+    for (let i = 0; i < allFibNumArray.length; i++) {
+        if (allFibNumArray[i] % 2 === 0) {
             sum += allFibNumArray[i];
         }
     }

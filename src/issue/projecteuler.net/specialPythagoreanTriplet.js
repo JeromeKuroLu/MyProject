@@ -9,16 +9,16 @@
  */
 
 function findPythagoreanTripletBySum(sum) {
-    var ra,
+    let ra,
         rb,
         rc;
     if (sum < 1) {
         console.log("Please input available number.")
     }
     else {
-        var upperLimit = Math.floor(sum / 3);
-        for (var a = 3; a < upperLimit; a++) {
-            var b = (Math.pow(sum, 2) - 2 * a * sum) / (2 * (sum - a)),
+        let upperLimit = Math.floor(sum / 3);
+        for (let a = 3; a < upperLimit; a++) {
+            let b = (Math.pow(sum, 2) - 2 * a * sum) / (2 * (sum - a)),
                 ib = Math.floor(b);
             if (ib === b && b > a) {
                 ra = a;

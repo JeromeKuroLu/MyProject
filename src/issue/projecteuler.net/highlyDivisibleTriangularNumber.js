@@ -18,11 +18,11 @@ function getTriangularNumbersByDivisorNum(divisorNum) {
         console.log("Can't find that Triangular number, please input positive number.");
     }
     else {
-        var triangularNumArray = [],
+        let triangularNumArray = [],
             triGroupObj = {},
             divisorCount = 1;
-        for (var i = 1; divisorCount <= divisorNum; i++) {
-            var triangularNum = (i + 1) * i / 2,
+        for (let i = 1; divisorCount <= divisorNum; i++) {
+            let triangularNum = (i + 1) * i / 2,
                 divisorArray = getDivisors(triangularNum);
             if (divisorArray.length > divisorNum) {
                 triGroupObj[divisorCount] = triangularNumArray;
@@ -45,11 +45,11 @@ function getTriangularNumbersOverDivisorNum(divisorNum) {
         console.log("Can't find that Triangular number, please input positive number.");
     }
     else {
-        var triangularNumArray = [],
+        let triangularNumArray = [],
             triGroupObj = {},
             divisorCount = 1;
-        for (var i = 1; divisorCount <= divisorNum; i++) {
-            var triangularNum = (i + 1) * i / 2,
+        for (let i = 1; divisorCount <= divisorNum; i++) {
+            let triangularNum = (i + 1) * i / 2,
                 divisorArray = getDivisors(triangularNum);
             if (divisorArray.length > divisorNum) {
                 triGroupObj[divisorCount] = triangularNumArray;
@@ -70,19 +70,19 @@ function getTriangularNumbersOverDivisorNum(divisorNum) {
 }
 
 function getDivisors(num) {
-    var d1 = 1,
+    let d1 = 1,
         d2 = num,
         divisorsArray = [];
     while (true) {
         if (d2 < d1) {
             break;
         }
-        if (Math.floor(d2) == d2) {
+        if (Math.floor(d2) === d2) {
             if (d1 < d2) {
                 divisorsArray.push(d1);
                 divisorsArray.push(d2);
             }
-            else if (d1 == d2) {
+            else if (d1 === d2) {
                 divisorsArray.push(d1);
                 break;
             }

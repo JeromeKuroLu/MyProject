@@ -3,7 +3,7 @@
  * Find the sum of all the multiples of 3 or 5 below 1000.
  */
 function findSumMultiplier(product, divisor) {
-    var multiplier = 1,
+    let multiplier = 1,
         r = divisor * multiplier;
     while (r < product) {
         multiplier++;
@@ -13,7 +13,7 @@ function findSumMultiplier(product, divisor) {
 }
 
 function getResult() {
-    var multiplierOf3 = findSumMultiplier(1000, 3),
+    let multiplierOf3 = findSumMultiplier(1000, 3),
         multiplierOf5 = findSumMultiplier(1000, 5),
         multiplierOf15 = findSumMultiplier(1000, 15);
     console.log(multiplierOf3);

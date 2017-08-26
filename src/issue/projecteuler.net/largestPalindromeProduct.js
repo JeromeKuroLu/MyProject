@@ -3,15 +3,15 @@
  * What is the largest prime factor of the number 600851475143 ?
  */
 function findLargestPalindromeProduct(factorDigit) {
-    var lowRange = Math.pow(10, factorDigit - 1),
+    let lowRange = Math.pow(10, factorDigit - 1),
         highRange = Math.pow(10, factorDigit),
         cLowRange = highRange - 10,
         cHighRange = highRange - 1,
         palindromeProductArray = [];
     while (cLowRange >= lowRange) {
-        for (var i = cHighRange; i >= cLowRange; i--) {
-            for (var j = highRange - 1; j >= lowRange; j--) {
-                var product = i * j;
+        for (let i = cHighRange; i >= cLowRange; i--) {
+            for (let j = highRange - 1; j >= lowRange; j--) {
+                let product = i * j;
                 if (isPalindrome(product)) {
                     palindromeProductArray.push(product);
                 }
@@ -24,13 +24,13 @@ function findLargestPalindromeProduct(factorDigit) {
 }
 
 function isPalindrome(num) {
-    var numStr = num.toString(),
+    let numStr = num.toString(),
         midIndex = Math.ceil(numStr.length / 2) - 1,
         isPalindrome = true;
-    for (var i = 0; i <= midIndex; i++) {
-        var startNum = numStr[i],
+    for (let i = 0; i <= midIndex; i++) {
+        let startNum = numStr[i],
             endNum = numStr[numStr.length - 1 - i];
-        if (startNum != endNum) {
+        if (startNum !== endNum) {
             isPalindrome = false;
             break;
         }

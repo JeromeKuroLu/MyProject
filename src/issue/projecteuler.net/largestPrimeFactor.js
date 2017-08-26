@@ -3,10 +3,10 @@
  * Find the largest palindrome made from the product of two 3-digit numbers.
  */
 function findLargestPrimeFactor(product) {
-    var sortedPrimeFactorArray = [];
+    let sortedPrimeFactorArray = [];
 
     while (product > 1) {
-        var factor = getPrimeFactor(product);
+        let factor = getPrimeFactor(product);
         product = product / factor;
         sortedPrimeFactorArray.push(factor);
     }
@@ -15,8 +15,8 @@ function findLargestPrimeFactor(product) {
 }
 
 function getPrimeFactor(product) {
-    for (var f = 2; f <= product; f++) {
-        if (product % f == 0) {
+    for (let f = 2; f <= product; f++) {
+        if (product % f === 0) {
             return f;
         }
     }

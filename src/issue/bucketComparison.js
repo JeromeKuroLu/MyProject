@@ -7,16 +7,16 @@ function bucketComparison(redArr, blueArr, status) {
         this.volume = volume;
     }
 
-    var redBucketArr = [],
+    let redBucketArr = [],
         blueBucketArr = [];
     // construct two color bucket arrays
-    for (var i = 0, rLen = redArr.length; i < rLen; i++) {
-        var rv = redArr[i],
+    for (let i = 0, rLen = redArr.length; i < rLen; i++) {
+        let rv = redArr[i],
             redBucket = new Bucket('red', rv);
         redBucketArr.push(redBucket);
     }
-    for (var j = 0, bLen = blueArr.length; j < bLen; j++) {
-        var bv = blueArr[j],
+    for (let j = 0, bLen = blueArr.length; j < bLen; j++) {
+        let bv = blueArr[j],
             blueBucket = new Bucket('blue', bv);
         blueBucketArr.push(blueBucket);
     }
@@ -28,7 +28,7 @@ function bucketComparison(redArr, blueArr, status) {
 
 function quickFindAndSort(redBucketArr, startIndex, endIndex, blueBucketArr, status) {
     if (endIndex - startIndex > 0) {
-        var pivotIndex = parseInt((Math.random() * (endIndex - startIndex + 1) + startIndex), 10),
+        let pivotIndex = parseInt((Math.random() * (endIndex - startIndex + 1) + startIndex), 10),
             t = partition(redBucketArr, startIndex, endIndex, pivotIndex, blueBucketArr, status);
         if (typeof t == 'number') {
             quickFindAndSort(redBucketArr, startIndex, t - 1, blueBucketArr, status);
@@ -38,14 +38,14 @@ function quickFindAndSort(redBucketArr, startIndex, endIndex, blueBucketArr, sta
 }
 
 function partition(redBucketArr, startIndex, endIndex, pivotIndex, blueBucketArr, status) {
-    var rPivotBucket = redBucketArr[pivotIndex],
+    let rPivotBucket = redBucketArr[pivotIndex],
         bPivotBucket = {},
         rBoundaryIndex = startIndex - 1,
         bBoundaryIndex = startIndex - 1,
         bPivotIndex;
 
-    for (var k = startIndex; k <= endIndex; k++) {
-        var bBucket = blueBucketArr[k];
+    for (let k = startIndex; k <= endIndex; k++) {
+        let bBucket = blueBucketArr[k];
         if (compare(rPivotBucket, bBucket) === 0) {
             bPivotBucket = bBucket;
             bPivotIndex = k;
@@ -66,8 +66,8 @@ function partition(redBucketArr, startIndex, endIndex, pivotIndex, blueBucketArr
         blueBucketArr[endIndex] = bPivotBucket;
     }
 
-    for (var i = startIndex; i < endIndex; i++) {
-        var rcBucket = redBucketArr[i],
+    for (let i = startIndex; i < endIndex; i++) {
+        let rcBucket = redBucketArr[i],
             bcBucket = blueBucketArr[i];
         if ((status || compare(rcBucket, bPivotBucket) > 0) && (!status || compare(rcBucket, bPivotBucket) < 0)) {
             rBoundaryIndex++;
@@ -110,7 +110,7 @@ function compare(b1, b2) {
 }
 
 (function () {
-    var redArr = [5, 10, 9, 6, 8, 2, 1, 7, 4, 3],
+    let redArr = [5, 10, 9, 6, 8, 2, 1, 7, 4, 3],
         blueArr = [3, 9, 7, 1, 10, 4, 6, 5, 2, 8];
     bucketComparison(redArr, blueArr, false);
 })();

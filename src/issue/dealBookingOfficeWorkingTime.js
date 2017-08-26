@@ -1,12 +1,12 @@
 /**
  * Created by luje4 on 9/1/2016.
  */
-var _ = require('lodash'),
+let _ = require('lodash'),
     moment = require('moment'),
     xlsx = require('node-xlsx');
 
 function generateWorkingTime (officeCode, startTimeStr, endTimeStr) {
-    var noWorkingDayBuffer = xlsx.parse('../../static/no_working_day.xlsx')[0].data,
+    let noWorkingDayBuffer = xlsx.parse('../../static/no_working_day.xlsx')[0].data,
         workingHourBuffer = xlsx.parse('../../static/working_hour.xlsx')[0].data,
         reconstructTimeParam = constructTimeParam(startTimeStr, endTimeStr),
         realStartTimeStr = reconstructTimeParam.realStartTimeStr,
@@ -17,19 +17,19 @@ function generateWorkingTime (officeCode, startTimeStr, endTimeStr) {
         endYear = endMoment.year(),
         realWorkingMinutes = 0;
 
-    var noWorkingDayColumnIndexMap = generateColumnIndexMap(noWorkingDayBuffer[0]);
-    var workingHourColumnIndexMap = generateColumnIndexMap(workingHourBuffer[0]);
-    var noWorkingDayOfficeCodeMap = generateMetaDataMap(noWorkingDayBuffer, noWorkingDayColumnIndexMap);
-    var workingHourOfficeCodeMap = generateMetaDataMap(workingHourBuffer, workingHourColumnIndexMap);
+    let noWorkingDayColumnIndexMap = generateColumnIndexMap(noWorkingDayBuffer[0]);
+    let workingHourColumnIndexMap = generateColumnIndexMap(workingHourBuffer[0]);
+    let noWorkingDayOfficeCodeMap = generateMetaDataMap(noWorkingDayBuffer, noWorkingDayColumnIndexMap);
+    let workingHourOfficeCodeMap = generateMetaDataMap(workingHourBuffer, workingHourColumnIndexMap);
 
-    var realNoWorkingDays = [];
+    let realNoWorkingDays = [];
 
     if (startYear == endYear) {
         realNoWorkingDays = filterNoWorkingDays(officeCode, startMoment, endMoment, noWorkingDayOfficeCodeMap, noWorkingDayBuffer, noWorkingDayColumnIndexMap);
         realWorkingMinutes = calculateWorkingHourByYear(officeCode, startMoment, endMoment, realNoWorkingDays, workingHourBuffer, workingHourOfficeCodeMap, workingHourColumnIndexMap);
     }
     else if (startYear < endYear) {
-        var currentYear = startYear,
+        let currentYear = startYear,
             currentYearStartMoment,
             currentYearEndMoment;
         while (currentYear <= endYear) {
@@ -58,12 +58,12 @@ function generateWorkingTime (officeCode, startTimeStr, endTimeStr) {
 }
 
 function calculateWorkingHourByYear (officeCode, startMoment, endMoment, realNoWorkingDays, workingHourBuffer, workingHourOfficeCodeMap, workingHourColumnIndexMap) {
-    var wholeWorkingHour = 0,
+    let wholeWorkingHour = 0,
         wholeWeekWorkingHour = 0,
         workingTimeMap = {},
         mapObject = workingHourOfficeCodeMap[officeCode];
-    for (var i = mapObject.startIndex; i <= mapObject.endIndex; i++) {
-        var workingHourRecord = workingHourBuffer[i],
+    for (let i = mapObject.startIndex; i <= mapObject.endIndex; i++) {
+        let workingHourRecord = workingHourBuffer[i],
             dayOfWeek = workingHourRecord[workingHourColumnIndexMap.DAY_OF_WEEK] - 1,
             startTimeM = workingHourRecord[workingHourColumnIndexMap.START_TIME_IN_MINUTES],
             endTimeM = workingHourRecord[workingHourColumnIndexMap.END_TIME_IN_MINUTES],
@@ -72,7 +72,7 @@ function calculateWorkingHourByYear (officeCode, startMoment, endMoment, realNoW
         wholeWeekWorkingHour += dayCountTimeM;
     }
 
-    var startDayOfWeek = startMoment.weekday(),
+    let startDayOfWeek = startMoment.weekday(),
         endDayOfWeek = endMoment.weekday(),
         startWeek = startMoment.week(),
         endWeek = endMoment.week() == 1 ? endMoment.day(-7).week() + 1 : endMoment.week(),
@@ -99,7 +99,7 @@ function calculateWorkingHourByYear (officeCode, startMoment, endMoment, realNoW
     }
     //Subtract no working day
     _.forEach(realNoWorkingDays, function(noWorkingDayMoment) {
-        var noWorkingDayOfWeek = noWorkingDayMoment.weekday(),
+        let noWorkingDayOfWeek = noWorkingDayMoment.weekday(),
             noWorkingHour = workingTimeMap[noWorkingDayOfWeek];
         if (noWorkingHour) {
             wholeWorkingHour -= noWorkingHour;
@@ -110,21 +110,21 @@ function calculateWorkingHourByYear (officeCode, startMoment, endMoment, realNoW
 }
 
 function filterNoWorkingDays (officeCode, startMoment, endMoment, noWorkingDayOfficeCodeMap, noWorkingDayBuffer, columnIndexMap) {
-    var matchedNoWorkingDays = [],
+    let matchedNoWorkingDays = [],
         mapObject = noWorkingDayOfficeCodeMap[officeCode],
         startMomentExpand = moment(startMoment.format('YYYY-MM-DD')).subtract(1, 'days'),
         endMomentExpand = moment(endMoment.format('YYYY-MM-DD')).add(1, 'days');
-    for (var i = mapObject.startIndex; i <= mapObject.endIndex; i++) {
-        var noWorkingRecord = noWorkingDayBuffer[i],
+    for (let i = mapObject.startIndex; i <= mapObject.endIndex; i++) {
+        let noWorkingRecord = noWorkingDayBuffer[i],
             recordMonthNumber = noWorkingRecord[columnIndexMap.MONTH_NUMBER],
             recordDateNumber = noWorkingRecord[columnIndexMap.DAYS_OF_MONTH],
             recordEffectiveStartTime = noWorkingRecord[columnIndexMap.EFFECTIVE_START_IODT],
             recordEffectiveEndTime = noWorkingRecord[columnIndexMap.EFFECTIVE_END_IODT];
         if (recordEffectiveStartTime == 0 || recordEffectiveEndTime == 0) {
-            var basicYear = (recordEffectiveStartTime != 0 && startMoment.year() < _.slice(recordEffectiveStartTime.toString(), 0, 4).join('')) ? _.slice(recordEffectiveStartTime.toString(), 0, 4).join('') : startMoment.year(),
+            let basicYear = (recordEffectiveStartTime != 0 && startMoment.year() < _.slice(recordEffectiveStartTime.toString(), 0, 4).join('')) ? _.slice(recordEffectiveStartTime.toString(), 0, 4).join('') : startMoment.year(),
                 limitYear = (recordEffectiveEndTime != 0 && endMoment.year() > _.slice(recordEffectiveStartTime.toString(), 0, 4).join('')) ? _.slice(recordEffectiveEndTime.toString(), 0, 4).join('') : endMoment.year();
             while (basicYear <= limitYear) {
-                var newMoment = moment('1084-01-01');
+                let newMoment = moment('1084-01-01');
                 newMoment = parseEffectiveTimeToMoment(basicYear.toString(), recordMonthNumber, recordDateNumber);
                 if (newMoment.isBetween(startMomentExpand, endMomentExpand)) {
                     matchedNoWorkingDays.push(newMoment);
@@ -133,7 +133,7 @@ function filterNoWorkingDays (officeCode, startMoment, endMoment, noWorkingDayOf
             }
         }
         else {
-            var effectiveTimeMoment = parseEffectiveTimeToMoment(recordEffectiveStartTime.toString(), recordMonthNumber, recordDateNumber);
+            let effectiveTimeMoment = parseEffectiveTimeToMoment(recordEffectiveStartTime.toString(), recordMonthNumber, recordDateNumber);
             if (effectiveTimeMoment.isBetween(startMomentExpand, endMomentExpand)) {
                 matchedNoWorkingDays.push(effectiveTimeMoment);
             }
@@ -143,7 +143,7 @@ function filterNoWorkingDays (officeCode, startMoment, endMoment, noWorkingDayOf
 }
 
 function parseEffectiveTimeToMoment (timeStr, monthNumber, dateNumber) {
-    var timeM = null,
+    let timeM = null,
         timeObj = {
             year: _.slice(timeStr, 0, 4).join(''),
             month: monthNumber - 1,
@@ -156,13 +156,13 @@ function parseEffectiveTimeToMoment (timeStr, monthNumber, dateNumber) {
 }
 
 function generateMetaDataMap (buffer, columnIndexMap) {
-    var map = {};
+    let map = {};
     if (buffer.length > 1) {
-        var currentOfficeCode = "",
+        let currentOfficeCode = "",
             startIndex = 0;
 
-        for (var i = 1, len = buffer.length; i < len; i++) {
-            var record = buffer[i];
+        for (let i = 1, len = buffer.length; i < len; i++) {
+            let record = buffer[i];
             if (currentOfficeCode !== record[columnIndexMap.BOOKING_OFFICE_CODE]) {
                 map[currentOfficeCode] = {
                     startIndex: startIndex,
@@ -178,7 +178,7 @@ function generateMetaDataMap (buffer, columnIndexMap) {
 }
 
 function generateColumnIndexMap (columnNameArray) {
-    var columnIndexMap = {};
+    let columnIndexMap = {};
     _.forEach(columnNameArray, function(columnName, index) {
       columnIndexMap[columnName] = index;
     });
@@ -186,7 +186,7 @@ function generateColumnIndexMap (columnNameArray) {
 }
 
 function constructTimeParam(startTimeStr, endTimeStr) {
-    var temp = endTimeStr ? endTimeStr : moment().format('YYYY-MM-DD');
+    let temp = endTimeStr ? endTimeStr : moment().format('YYYY-MM-DD');
     if (moment(startTimeStr).isSameOrBefore(moment(temp))) {
         endTimeStr = temp;
     }
